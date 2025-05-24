@@ -7,6 +7,7 @@ export const Sample = () => {
   return (
     <div>
       <FactorySamples audios={audios} />
+      <br />
     </div>
   );
 };
