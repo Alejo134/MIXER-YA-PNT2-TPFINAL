@@ -3,11 +3,10 @@ import { getSampleAudios } from '../../services/sampleService';
 
 const audios = getSampleAudios()
 
-export const Sample = () => {
+export const SampleBar = () => {
   return (
     <div>
       <FactorySamples audios={audios} />
-      <br />
     </div>
   );
 };
