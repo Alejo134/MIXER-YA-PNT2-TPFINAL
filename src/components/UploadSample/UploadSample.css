@@ -1,0 +1,52 @@
+.upload-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.upload-icon {
+  font-size: 1.8rem;
+  color: #ffff;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.upload-icon:hover {
+  color: #666;
+}
+
+.upload-modal {
+  background: #2b2b2b;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 12px;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upload-modal input[type="text"],
+.upload-modal input[type="file"] {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.upload-modal button {
+  padding: 0.5rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-modal button:hover {
+    transition: 0.3s;
+  background-color: #1976d2b5;
+}
