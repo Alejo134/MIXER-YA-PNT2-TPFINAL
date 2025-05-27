@@ -1,9 +1,10 @@
 import { FactorySamples } from '../FactorySamples/factorySamples.jsx';
-import { getSampleAudios } from '../../services/sampleService';
-
-const audios = getSampleAudios()
+import { useSamples } from '../../hooks/useSamples.jsx';
 
 export const SampleBar = () => {
+
+  const audios = useSamples()
+
   return (
     <div>
       <FactorySamples audios={audios} />

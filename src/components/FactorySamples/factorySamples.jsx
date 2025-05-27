@@ -1,4 +1,3 @@
-import React from 'react';
 import { Control } from '../Control/control.jsx';
 
 export const FactorySamples = ({ audios }) => {

@@ -2,6 +2,7 @@ import './App.css'
 import { Sidebar } from './components/Sidebar/sidebar.jsx'
 import { Mixer } from './components/Mixer/mixer.jsx'
 import { UploadSample } from './components/UploadSample/UploadSample.jsx'
+import { SamplesProvider } from './hooks/useSamples.jsx'
 
 function App() {
 
@@ -14,9 +15,11 @@ function App() {
 
   return (
     <> 
+    <SamplesProvider>
       <Sidebar />        
       <Mixer />        
       <UploadSample onUpload={handleUpload} />
+    </SamplesProvider>
     </>
   )
 }

@@ -30,6 +30,8 @@ export const Control = ({ src }) => {
   }, [volume, sound]);
 
   const play = () => {
+    if (isPlaying) return  // Si sacamos esta coondición, por cada play inicia el sample de nuevo.
+
     if (sound) {
       sound.play();
       setIsPlaying(true);
